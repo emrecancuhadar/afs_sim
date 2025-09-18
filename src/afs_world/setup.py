@@ -9,7 +9,11 @@ setup(
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/world.launch.py']),
-        ('share/' + package_name + '/config', ['config/map_40x40.png']),
+        ('share/afs_world/config', [
+            'config/map_40x40.png',
+            'config/map_city_60x60.png',
+        ]),
+        
     ],
     install_requires=['setuptools', 'Pillow', 'numpy'],
     zip_safe=True,

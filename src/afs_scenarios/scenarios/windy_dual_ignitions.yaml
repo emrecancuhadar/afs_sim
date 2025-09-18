@@ -1,0 +1,37 @@
+common:
+  rows: 60
+  cols: 60
+  resolution: 0.2
+
+afs_world:
+  map_png: "map_city_60x60.png"
+  resolution: 0.2
+  origin_xy: [-5.0, -5.0]
+  occupied_threshold: 0.4
+  frame_id: "map"
+
+afs_env:
+  rows: 60
+  cols: 60
+  summer_red:   "summer_red.tiff"
+  summer_nir:   "summer_nir.tiff"
+  winter_red:   "winter_red.tiff"
+  winter_nir:   "winter_nir.tiff"
+  dem_tif:      "dem.tif"
+  intensity_image: ""
+
+afs_fire:
+  rows: 60
+  cols: 60
+  dt: 0.2
+  seed: 202
+  use_sim_time: true
+  wind_dir: "NE"
+  wind_ft_min: 7000.0
+  dwell_steps: 16
+  A_ros_like: 1.1
+  B_wind_align: 0.25
+  C_fwi_like: 0.08
+  ignitions:
+    - "[10,10]"
+    - "[45,48]"
